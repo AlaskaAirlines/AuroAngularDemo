@@ -18,7 +18,7 @@ window.WebComponents.waitFor(() => {
   // Note: returning the import's promise causes the custom elements
   // polyfill to wait until all definitions are loaded and then upgrade
   // the document in one batch, for better performance.
-  return import('@alaskaairux/ods-button');
+  return import('./webcomponents');
 });
 
 
