@@ -11,8 +11,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "custom-webpack.config.js",
+              "mergeStrategies": { "externals": "replace" }
+            },
             "outputPath": "dist/orion-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -61,7 +65,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "browserTarget": "orion-angular:build"
           },
