@@ -15,7 +15,9 @@
           "options": {
             "customWebpackConfig": {
               "path": "custom-webpack.config.js",
-              "mergeStrategies": { "externals": "replace" }
+              "mergeStrategies": {
+                "externals": "replace"
+              }
             },
             "outputPath": "dist/orion-angular",
             "index": "src/index.html",
@@ -25,7 +27,12 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.js",
+                "input": "node_modules/@webcomponents/webcomponentsjs",
+                "output": "webcomponents/"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -124,6 +131,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "orion-angular"
 }
