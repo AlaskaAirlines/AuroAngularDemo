@@ -1,13 +1,10 @@
 <h1>Web Components Demo</h1>
-<ods-inputoptions #inputOptions (input)="handleInput(inputOptions.value)" id="rdo" type="checkbox" name="rdo" label="List of options" for="radio1" componentData='[
-  { "id": "radio1", "value": "yes", "label": "Yes" },
-  { "id": "radio2", "value": "no", "label": "No" },
-  { "id": "radio3", "value": "maybe", "label": "Maybe" }
-]'></ods-inputoptions>
+<ods-inputoptions #inputOptions (input)="handleInput(inputOptions.value)" id="buttonText" type="checkbox" name="rdo"
+  label="List of options" for="radio1" [componentData]="componentData"></ods-inputoptions>
 <h2 *ngIf="selectedOptions.length > 0">You Selected</h2>
 <ul>
-    <li *ngFor="let option of selectedOptions">
-        {{option}}
-    </li>
+  <li *ngFor="let option of selectedOptions">
+    {{option}}
+  </li>
 </ul>
-<ods-button (click)="handleClick()" [disabled]="buttonDisabled">{{ buttonText }}</ods-button>
+<ods-button (click)="handleClick()" [buttontype]="buttonType" [disabled]="buttonDisabled">{{ buttonText }}</ods-button>
