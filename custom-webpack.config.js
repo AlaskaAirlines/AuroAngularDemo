@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = (config, options) => {
   /**
-   * We need to add a rule to compile the lit-element module (which is 
-   * shipped in es6 format) to es5
+   * We need to add a rule to compile the web components and dependencies (shipped as ES6) to ES5
    */
   config.module.rules.push({
     test: /\.js$/,
