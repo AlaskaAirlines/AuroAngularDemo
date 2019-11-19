@@ -14,6 +14,7 @@
     "@alaskaairux/ods-button": "^4.0.0",
     "@alaskaairux/ods-inputoptions": "^1.1.5",
     "@alaskaairux/orion-design-tokens": "^2.7.3",
+    "@alaskaairux/orion-web-core-style-sheets": "^2.7.1",
     "@angular/animations": "~8.2.13",
     "@angular/common": "~8.2.13",
     "@angular/compiler": "~8.2.13",

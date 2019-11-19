@@ -1,7 +1,5 @@
 # OrionAngularDemo
-An example Angular App with Orion Components integrated. This app runs and works in all Alaska-supported browsers. Explore the project source to see the Orion Components being used in a Angular environment.
-
-Below are instructions for adding Orion compatibility to your Angular application. These instructions are intended for projects that were bootstrapped with Angular CLI. They are written from the perspective of a newly generated project, but it should be clear where to add these lines in an existing project. If your project is using a custom Webpack config, see the Vanilla JS demo app and instructions.
+Below are instructions for adding Orion compatibility to your Angular application. These instructions are intended for projects that were bootstrapped with Angular CLI. They are written from the perspective of a newly generated project, but it should be clear where to add these lines in an existing project. If your project is using a custom Webpack config, see the [Vanilla JS demo app and instructions](https://github.com/AlaskaAirlines/OrionJavascriptDemo).
 
 ## Setting up your Angular app to use Orion Web Components
 The following steps will let you start using Web Components in your Angular application across all supported browsers.
@@ -78,10 +76,12 @@ The following steps will let you start using Web Components in your Angular appl
     <ods-button (click)="handleClick()">Hello World</ods-button>
     ```
 
-1. In `styles.css`, import the Orion Design Tokens from the npm package. The design tokens need to be available for the component to render.
+1. In `styles.css`, import the Orion Design Tokens from the npm package. The design tokens need to be available for the component to render. 
     ```css
     @import '~@alaskaairux/orion-design-tokens/dist/tokens/CSSTokenProperties.css';
     ```
+  
+    This example project uses Sass to integrate with the Orion Web Core Stylesheets. See `styles.scss` in this project for an example. You will need to `npm install @alaskaairux/orion-web-core-style-sheets` for access to the stylesheets.
 
 1. Run the application with `npm start`. The button should render and trigger an alert when clicked.
 
