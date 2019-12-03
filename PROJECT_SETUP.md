@@ -1,4 +1,5 @@
-# OrionAngularDemo
+# Web Component Angular Demo
+
 Below are instructions for adding Orion compatibility to your Angular application. These instructions are intended for projects that were bootstrapped with Angular CLI. They are written from the perspective of a newly generated project, but it should be clear where to add these lines in an existing project. If your project is using a custom Webpack config, see the [Vanilla JS demo app and instructions](https://github.com/AlaskaAirlines/OrionJavascriptDemo).
 
 ## Setting up your Angular app to use Orion Web Components
