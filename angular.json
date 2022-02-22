@@ -71,19 +71,28 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           }
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
-          "options": {
-            "browserTarget": "orion-angular:build"
-          },
           "configurations": {
             "production": {
               "browserTarget": "orion-angular:build:production"
+            },
+            "development": {
+              "browserTarget": "orion-angular:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
