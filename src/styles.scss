@@ -1,12 +1,18 @@
-@import '~@alaskaairux/orion-design-tokens/dist/tokens/TokenProperties';
-@import '~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables';
-@import '~@alaskaairux/orion-web-core-style-sheets/dist/breakpoints';
-@import '~@alaskaairux/orion-web-core-style-sheets/dist/baseline';
+@import "~@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
+@import "~@alaskaairux/design-tokens/dist/tokens/SassCustomProperties";
+@import "~@alaskaairux/webcorestylesheets/dist/breakpoints";
+@import '~@alaskaairux/webcorestylesheets/dist/fonts';
+@import "~@alaskaairux/webcorestylesheets/dist/normalize";
+@import "~@alaskaairux/webcorestylesheets/dist/essentials";
+@import "~@alaskaairux/webcorestylesheets/dist/utilityClasses";
 
 $asset-font-circular-dir: 'https://resource.alaskaair.net/stylesheets/circular/';
-@import '~@alaskaairux/orion-web-core-style-sheets/dist/fonts';
+
 
 body { 
     width: 80%;
     margin: auto;
 }
+
+
+
