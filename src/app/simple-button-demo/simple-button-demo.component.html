@@ -1,0 +1,8 @@
+<auro-button [disabled]="disabled" (click)="changeLastClicked('Primary')">Primary</auro-button>
+<auro-button secondary [disabled]="disabled" (click)="changeLastClicked('Secondary')">Secondary</auro-button>
+<auro-button tertiary [disabled]="disabled" (click)="changeLastClicked('Tertiary')">Tertiary</auro-button>
+<br /><br />
+
+<auro-button (click)="toggleDisabled()">Toggle Disabled</auro-button>
+<br /><br />
+Last Clicked: {{ lastClicked }}
