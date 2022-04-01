@@ -1,0 +1,63 @@
+@import "~@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
+@import "~@alaskaairux/webcorestylesheets/dist/breakpoints";
+
+.wrapper > section {
+  margin: var(--auro-size-xl);
+  padding-top: var(--auro-size-md);
+
+  @include auro_breakpoint--sm {
+    max-width: 62%;
+    margin: var(--auro-size-md) auto 0 250px;
+  }
+
+  @include auro_breakpoint--md {
+    max-width: 70%;
+    margin: var(--auro-size-md) auto 0 290px;
+  }
+
+  @include auro_breakpoint--lg {
+    max-width: 64rem;
+    margin: var(--auro-size-md) auto 0 25%;
+  }
+}
+
+.sidenav {
+  left: -300px;
+  transition: all .3s ease;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  height: calc(100% - 80px);
+  overflow: scroll;
+  top: 80px;
+  background-color: var(--auro-color-background-lighter);
+//  background-color: #f8f8f8;
+
+  /*
+  .isHeading {
+    margin: var(--auro-size-lg) 0 0;
+  }
+
+  a {
+    margin-bottom: var(--auro-size-xxs);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+*/
+
+  @include auro_breakpoint--sm {
+    left: 0;
+    display: block;
+    opacity: 1;
+    left: auto;
+    width: 230px;
+    top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @include auro_breakpoint--md {
+    width: 270px;
+  }
+}
