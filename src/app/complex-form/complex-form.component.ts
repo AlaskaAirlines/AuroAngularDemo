@@ -11,8 +11,7 @@ export class ComplexFormComponent {
   firstName: AbstractControl;
   middleName: AbstractControl;
   lastName: AbstractControl;
-  departureAssist: AbstractControl;
-  arrivalAssist: AbstractControl;
+  desert: AbstractControl;
 
   testVal: boolean;
 
@@ -21,14 +20,12 @@ export class ComplexFormComponent {
       firstName: ['', [Validators.required]],
       middleName: ['', []],
       lastName: ['', [Validators.required]],
-      departureAssist: [true, [Validators.required]],
-      arrivalAssist: [false, [Validators.required]],
+      desert: ['no', [Validators.required]],
     });
     this.firstName = this.formGroup.controls.firstName;
     this.middleName = this.formGroup.controls.middleName;
     this.lastName = this.formGroup.controls.lastName;
-    this.departureAssist = this.formGroup.controls.departureAssist;
-    this.arrivalAssist = this.formGroup.controls.arrivalAssist;
+    this.desert = this.formGroup.controls.desert;
 
     this.testVal = true;
   }
