@@ -3,11 +3,13 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SimpleButtonDemoComponent } from './simple-button-demo/simple-button-demo.component';
+import { NavContainerComponent } from './nav-container/nav-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleButtonDemoComponent
+    SimpleButtonDemoComponent,
+    NavContainerComponent
   ],
   imports: [
     BrowserModule
