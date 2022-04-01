@@ -1,0 +1,24 @@
+
+<h2>Using Form Group</h2>
+<form [formGroup]="formGroup" class="form">
+  <auro-checkbox-group>
+    <span slot="legend" required>Assistance Requested</span>
+    <auro-checkbox id="departureAssist" formControlName="departureAssist" ngDefaultControl value="true">Assistance At Departure</auro-checkbox>
+    <auro-checkbox id="arrivalAssist" formControlName="arrivalAssist" ngDefaultControl value="true">Assistance At Arrival</auro-checkbox>
+  </auro-checkbox-group>
+</form>
+
+<h2>No Form Group</h2>
+<input type="checkbox" [(ngModel)]="testVal" /> Normal Checkbox
+<input type="checkbox" [(ngModel)]="testVal" /> Second Normal Checkbox
+
+<auro-checkbox id="optionNgModel" [(ngModel)]="testVal" ngDefaultControl>Using ngModel</auro-checkbox>
+<auro-checkbox id="optionValue" [value]="testVal" ngDefaultControl>Using value</auro-checkbox>
+
+<hr />
+
+<pre class="form-output">
+  Form Group Departure: {{ departureAssist.value }}
+  Form Group Arrival: {{ arrivalAssist.value }}
+  Bare Checkboxes: {{ testVal }}
+</pre>

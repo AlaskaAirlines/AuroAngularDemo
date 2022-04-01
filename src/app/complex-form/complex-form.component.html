@@ -1,0 +1,26 @@
+<p>The purpose of this complex form example is to show a non-trivial implementation of typical form elements using Angular and Auro. In the code behind we are making using of <a href="https://angular.io/guide/reactive-forms" target="_blank">Reactive Forms</a></p>
+
+
+<hr />
+
+<form [formGroup]="formGroup" class="form">
+  <auro-input ngDefaultControl required formControlName="firstName">
+    <span slot="label">First Name</span>
+  </auro-input>
+
+  <auro-input ngDefaultControl formControlName="middleName">
+    <span slot="label">Middle Name</span>
+  </auro-input>
+
+  <auro-input ngDefaultControl required formControlName="lastName">
+    <span slot="label">Last Name</span>
+  </auro-input>
+
+</form>
+<hr />
+
+<pre class="form-output">
+  First Name: {{ firstName.value }}
+  Middle Name: {{ middleName.value }}
+  Last Name: {{ lastName.value }}
+</pre>
